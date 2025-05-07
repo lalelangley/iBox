@@ -1,0 +1,116 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+  }
+  
+  .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .hero-section .container {
+    z-index: 1;
+  }
+  
+  .hero-section h1,
+  .hero-section p {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  .hero-section h1:hover,
+  .hero-section p:hover {
+    transform: scale(1.05);
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.8);
+    cursor: default;
+  }
+  
+  .hero-section a.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    color: #333;
+  }
+  
+  .navbar.scrolled {
+    background-color: #ffffff88;
+    color: #333;
+  }
+  
+  .navbar.scrolled .nav-link {
+    color: #333333;
+  }
+  
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: #333;
+  }
+  
+  .navbar:hover {
+    background-color: rgba(255, 255, 255, 0.831);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #007bff;
+    text-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  /* Carousel */
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+  
+  .carousel-indicators {
+    margin-top: 1rem;
+  }
+  
+  .carousel-indicators {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .carousel-indicators button {
+    width: 100px;
+    height: 12px;
+    border-radius: 0;
+    border: none;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .carousel-indicators button.active {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  
+  .carousel-indicators button:nth-child(1) { background-color: black; }
+  .carousel-indicators button:nth-child(2) { background-color: rgb(186, 248, 185); }
+  .carousel-indicators button:nth-child(3) { background-color: #c3e5f4; }
+  .carousel-indicators button:nth-child(4) { background-color: rgb(253, 240, 166); }
+  .carousel-indicators button:nth-child(5) { background-color: rgb(250, 203, 211); }
+  

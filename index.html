@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iBox</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- SweetAlert2 CSS & JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- File JS kamu -->
+<script src="js/script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+</body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="images/IBox.webp" alt="iBox Logo" width="70">
+    </a>    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#fitur">Fitur</a></li>
+        <li class="nav-item"><a class="nav-link" href="#spesifikasi">Spesifikasi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#preorder">Pre-Order</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero-section d-flex align-items-center justify-content-center text-center text-white position-relative" style="min-height: 100vh;">
+  <!-- Video Background -->
+  <video autoplay muted loop playsinline class="position-absolute top-0 start-0 w-100 h-70 object-fit-cover z-0">
+    <source src="images/iPhone 15.mp4" type="video/mp4">
+    Browser Anda tidak mendukung video.
+  </video>
+
+  <!-- Overlay agar teks terbaca -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.25; z-index: 1;"></div>
+
+  <!-- Konten Teks -->
+  <div class="container z-2 position-relative">
+    <h1 class="display-5 fw-bold">iPhone 15</h1>
+    <p class="lead">Power. Simplicity. Style. Everything you need, beautifully refined.</p>
+    <a href="#preorder" class="btn btn-primary mt-3">Pre-Order Sekarang</a>
+  </div>
+</section>
+
+
+
+  <!-- Fitur -->
+  <section id="fitur" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Fitur Unggulan</h2>
+      <div class="row text-center">
+        <div class="col-md-3">
+          <div class="card p-3">
+            <i class="bi bi-camera display-4"></i>
+            <h5 class="mt-3">Kamera 48MP</h5>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3">
+            <i class="bi bi-phone display-4"></i>
+            <h5 class="mt-3">Super Retina XDR</h5>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3">
+            <i class="bi bi-wifi display-4"></i>
+            <h5 class="mt-3">5G Ready</h5>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3">
+            <i class="bi bi-battery-charging display-4"></i>
+            <h5 class="mt-3">Fast Charging 20W</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Spesifikasi -->
+  <section id="spesifikasi" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Spesifikasi Teknis</h2>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <tbody>
+            <tr><th>Prosesor</th><td>Apple A16 Bionic</td></tr>
+            <tr><th>RAM</th><td>6GB</td></tr>
+            <tr><th>Penyimpanan</th><td>128GB, 256GB, 512GB</td></tr>
+            <tr><th>Layar</th><td>6.1" Super Retina XDR OLED, 60Hz</td></tr>
+            <tr><th>Kamera</th><td>48MP (wide) + 12MP (ultrawide)</td></tr>
+            <tr><th>Baterai</th><td>3.349mAh, Fast Charging 20W</td></tr>
+            <tr><th>Konektivitas</th><td>5G, Wi‑Fi 6, Bluetooth 5.3</td></tr>
+            <tr><th>Sistem Operasi</th><td>iOS 17</td></tr>
+            <tr><th>Fitur Lain</th><td>Dynamic Island, Face ID, Ceramic Shield</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+  <section id="preorder" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Formulir Pre-Order</h2>
+      <form id="preOrderForm" class="col-md-8 mx-auto">
+  
+        <div class="mb-3">
+          <label for="nama" class="form-label">Nama</label>
+          <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+        </div>
+  
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="contoh@email.com" required>
+        </div>
+  
+        <div class="mb-3">
+          <label for="hp" class="form-label">Nomor HP</label>
+          <input type="tel" class="form-control" id="hp" name="hp" placeholder="08xxxxxxxxxx" required>
+        </div>
+  
+        <!-- Carousel Gambar iPhone -->
+        <div class="mb-4 text-center">
+          <div id="iphoneCarousel" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/apple_iphone_15_black_1_1.webp" class="d-block w-50 mx-auto my-3" alt="iPhone 15 Hitam">
+              </div>
+              <div class="carousel-item">
+                <img src="images/apple_iphone_15_green_1.webp" class="d-block w-50 mx-auto my-3" alt="iPhone 15 Hijau">
+              </div>
+              <div class="carousel-item">
+                <img src="images/apple_iphone_15_blue_1.webp" class="d-block w-50 mx-auto my-3" alt="iPhone 15 Biru">
+              </div>
+              <div class="carousel-item">
+                <img src="images/apple_iphone_15_yellow_1_3.webp" class="d-block w-50 mx-auto my-3" alt="iPhone 15 Kuning">
+              </div>
+              <div class="carousel-item">
+                <img src="images/apple_iphone_15_pink_1_3.webp" class="d-block w-50 mx-auto my-3" alt="iPhone 15 Pink">
+              </div>
+            </div>
+  
+            <!-- Carousel Indicators sebagai tombol pilih warna -->
+            <div class="carousel-indicators justify-content-center position-static mt-3">
+              <button type="button" data-bs-target="#iphoneCarousel" data-bs-slide-to="0" class="active" data-warna="Hitam" aria-label="Hitam"></button>
+              <button type="button" data-bs-target="#iphoneCarousel" data-bs-slide-to="1" data-warna="Hijau" aria-label="Hijau"></button>
+              <button type="button" data-bs-target="#iphoneCarousel" data-bs-slide-to="2" data-warna="Biru" aria-label="Biru"></button>
+              <button type="button" data-bs-target="#iphoneCarousel" data-bs-slide-to="3" data-warna="Kuning" aria-label="Kuning"></button>
+              <button type="button" data-bs-target="#iphoneCarousel" data-bs-slide-to="4" data-warna="Pink" aria-label="Pink"></button>
+            </div>
+          </div>
+          <p>Pilih warna yang Anda inginkan</p>
+        </div>
+  
+        <div class="mb-3">
+          <label for="catatan" class="form-label">Catatan</label>
+          <textarea class="form-control" id="catatan" name="catatan" rows="3" placeholder="Opsional..."></textarea>
+        </div>
+  
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Kirim Pre-Order</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+
+  <footer class="bg-dark text-white text-center p-3">
+    <p class="mb-1">&copy; 2025 iBox</p>
+    <p class="mb-0">
+      <i class="bi bi-envelope"></i> info@iBox.com &nbsp; | &nbsp;
+      <i class="bi bi-instagram"></i> @iBox.id
+    </p>
+  </footer>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
